@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.prose {
+  @apply max-w-none;
+}
+
+.prose h2 {
+  @apply text-3xl font-bold mb-8;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold mb-4;
+}
+
+.prose p {
+  @apply text-gray-600 mb-6;
+}
+
+/* Mapbox styles */
+.mapboxgl-map {
+  @apply w-full h-full;
+}
+
+.mapboxgl-ctrl-group {
+  @apply shadow-lg;
+}
+
+.mapboxgl-ctrl button {
+  @apply bg-white hover:bg-gray-100 transition-colors;
+}
